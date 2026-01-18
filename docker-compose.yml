@@ -1,0 +1,57 @@
+
+
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: comercializadora-backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./app:/app/app
+      - ./migrations:/app/migrations
+      - ./scripts:/app/scripts
+      - ./alembic.ini:/app/alembic.ini
+      - ./.env.example:/app/.env
+    environment:
+      - DATABASE_URL=postgresql://comercializadora:comercializadora@postgres:5432/comercializadora
+      - ENVIRONMENT=development
+      - DEBUG=true
+      - SECRET_KEY=dev-secret-key-change-in-production
+    networks:
+      - comercializadora-network
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: comercializadora-postgres
+    environment:
+      - POSTGRES_USER=comercializadora
+      - POSTGRES_PASSWORD=comercializadora
+      - POSTGRES_DB=comercializadora
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - comercializadora-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U comercializadora -d comercializadora"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  comercializadora-network:
+    driver: bridge
+
