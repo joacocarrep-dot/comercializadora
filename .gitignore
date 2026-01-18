@@ -1,0 +1,393 @@
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging.local
+
+# Archivos de configuración sensible
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components/
+
+# node_modules
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# VuePress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary folders
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Migraciones (excepto las de Alembic)
+!migrations/versions/
+
+# Docker
+*.dockerfile
+docker-compose.override.yml
+
+# Backups
+*.bak
+*.backup
+
+# Archivos de secretos
+secrets.yaml
+secrets.yml
+config/secrets.*
+
+# Archivos de despliegue
+deploy/
+.kube/
+
+# Archivos generados por el IDE
+.project
+.classpath
+.settings/
+
+# Archivos de compilación
+build/
+dist/
+*.min.js
+*.min.css
+
+# Archivos de paquetes
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# Archivos de documentación generados
+docs/_build/
+
+# Archivos de pruebas
+test-results/
+.junit/
+test-reports/
+
+# Archivos de cobertura
+.coverage
+htmlcov/
+
+# Archivos de profiling
+profile/
+prof/
+
+# Archivos de cache
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# Archivos de lock
+poetry.lock
+Pipfile.lock
+yarn.lock
+package-lock.json
+
+# Archivos de configuración local
+*.local.yaml
+*.local.yml
+*.local.json
+
+# Archivos de datos de desarrollo
+development.db
+test.db
+
+# Archivos de sesión
+*.session
+*.session.*
+
+# Archivos de upload temporal
+uploads/temp/
+media/temp/
+
+# Archivos de cache de imágenes
+.cache/
+thumbnails/
+
+# Archivos de IDE específicos
+*.code-workspace
+
+# Archivos de pre-commit
+.pre-commit-config.yaml
+
+# Archivos de dependencias vendored
+vendor/
+.cargo/
+
+# Archivos de rust
+target/
+Cargo.lock
+
+# Archivos de go
+go.mod
+go.sum
+
+# Archivos de java
+*.class
+*.jar
+
+# Archivos de ruby
+Gemfile.lock
+.bundle/
+
+# Archivos de php
+composer.lock
+vendor/
+
+# Archivos de swift
+.swiftpm/
+.build/
+
+# Archivos de dotnet
+bin/
+obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de unity
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+
+# Archivos de gradle
+.gradle/
+build/
+
+# Archivos de maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Archivos de sbt
+dist/
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+.cache
+.history
+
